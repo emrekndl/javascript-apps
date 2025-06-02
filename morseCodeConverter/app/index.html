@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Morse Converter</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="npm/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="npm/materialize-css/dist/css/materialize.min.css">
+  </head>
+  <body>
+    <div id="app">
+      <h5 class="fas fa-h5"> VueJS, SocketIO and NodeJS with Morse Converter</h5>
+        <h6 class="fas fa-h6">
+            @author: Emre
+
+            <a href="https://github.com/emrekndl">
+                <i class="fa fa-github" aria-hidden="true"></i>
+                emrekndl
+            </a>
+</h6><br />
+    <main>
+
+      <center>
+
+      <div class="container">
+
+        <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+          <h3 style="font-weight:900;">{{ bt1 }}</h3>
+          <form class="col s12">
+
+            <div class='row'>
+              <div class='col s12'>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='input-field col s12'>
+                  <textarea id="textarea1" style="color:#111111;" class=" materialize-textarea" v-model="text" rows="8" cols="80"></textarea>
+                <label for='textarea1'>{{ flag == false ? '"-- --- .-. ... . / -.-. --- -. ...- . .-. - . .-."' : '"morse converter"'}} </label>
+              </div>
+            </div>
+              <button type="button" style="font-weight:900;" v-on:click="change()" class="waves-effect waves-light btn"> {{ bt1 }}</button>
+            <div class='row'>
+              <div class='input-field col s12'>
+                  <textarea  style="color:#111111;" rows="8" cols="80" class=" materialize-textarea" id="textarea1">{{ text2 }}</textarea> <!-- readonly="readonly" -->
+                  <label for='textarea1'>{{ flag == false ? '"morse converter"' : '"-- --- .-. ... . / -.-. --- -. ...- . .-. - . .-."'}} </label>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='input-field col s12'>
+            <button type="button" style="font-weight:900;" v-on:click="convert()" class="waves-effect waves-light btn">Convert</button>
+            <button type="button" style="font-weight:900;" v-on:click="clear()" class="waves-effect waves-light btn" > Clear </button>
+
+          </div>
+        </div>
+        <br />
+
+            </form>
+            </center>
+            </main>
+      </div>
+    <script src="npm/jquery/dist//jquery.min.js"></script>
+    <script src="npm/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="npm/vue/dist/vue.js"></script>
+    <script src="npm/socket.io-client/dist/socket.io.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
