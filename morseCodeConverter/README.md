@@ -2,9 +2,9 @@
 
 This application translates the morse code to text and the text to morse code.
 
-![Screenshot](https://github.com/emrekndl/morseCodeConverter/blob/master/screenShot1.png)
+![Screenshot](screenShot1.png)
 ### -
-![Screenshot](https://github.com/emrekndl/morseCodeConverter/blob/master/screenShot2.png)
+![Screenshot](screenShot2.png)
 
 ### Installing
 
@@ -48,23 +48,23 @@ Bu uygulama Node.js, Socket.IO ve Vue.js teknolojileri kullanılarak, bir websit
 - Konsol da uygulamanın başlatıldığı ve kacıncı portda çalıştığı yazdırılır.
 - Bağlı ve bağlantısı kesilmiş istemciler için günlük kaydı yapılır.Yapılan kayıtlar konsolda canlı olarak yazdırılır ve ayrıca /log dizini altında user.log dosyasına kaydedilir.
 
-![Screenshot](https://github.com/emrekndl/morseCodeConverter/blob/master/serverjs.png)
+![Screenshot](serverjs.png)
 
 ### 
 - Uygulama 2 farklı arayüze sahiptir.
 - Birinci arayüz, varsayılan olrak açılan sayfa, Latin alfabesindeki(ingiliz) metin alanına yazılan metinleri Convert butonuna tıklayarak Mors alfabesine dönüştürür ve ikinci metin alanına yazdırır.
 - İkinci arayüz, Morse To Text butonuna tıklayarak açılan sayfa, Mors alfabesiyle yazılmış metin alanlarındaki metinleri(mors metnini yazarkan her harf arasına boluk konularak yazılmalıdır.) Latin alfabesine dönüştürür.
 ### 
-![Screenshot](https://github.com/emrekndl/morseCodeConverter/blob/master/indexhtml.png)
+![Screenshot](indexhtml.png)
 
 ### 
 - Vuejs ile index.html den alınan girdilerle mors çevirme işlemi yapılır.
 - Sayfadan metin alnından alınan girdiler mors alfabesi dizisinde karşılığı konrol edilerek diğer metin alanına yeni girdiler yazdırılır.
 - Mors alfabesinden latin alfabesine çevirirken de girdinin latin alfabesi dizisindeki karşılığı konrol edilerek oluşan metin ikinci metin alanına yazdırılır.
 ### 
-![Screenshot](https://github.com/emrekndl/morseCodeConverter/blob/master/appjs1.png)
+![Screenshot](appjs1.png)
 ### -
-![Screenshot](https://github.com/emrekndl/morseCodeConverter/blob/master/appjs2.png)
+![Screenshot](appjs2.png)
 
 
 
